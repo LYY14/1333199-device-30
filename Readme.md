@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Юрий Лёгкий](https://up.htmlacademy.ru/htmlcss/30/user/1333199).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
