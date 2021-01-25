@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="https://via.placeholder.com/150x100" alt="Логотип интернет магазина &laquo;Девайс&raquo;">
+        </a>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label>
+            <span class="visually-hidden">Поиск</span>
+            <input type="search" name="search" placeholder="Поиск по&nbsp;сайту">
+          </label>
+        </form>
+        <ul>
+          <li>
+            <a href="#">Войти</a>
+          </li>
+          <li>
+            <a href="#">Сравнить</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">Каталог товаров</a>
+            <ul>
+              <li>
+                <a href="#">Вирутальная реальность</a>
+              </li>
+              <li>
+                <a href="#">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="#">Фитнес браслеты</a>
+              </li>
+              <li>
+                <a href="#">Умные часы</a>
+              </li>
+              <li>
+                <a href="#">Квадрокоптер</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Каталог товаров интернет-магазина гаджетов &laquo;ДЕВАЙС&raquo;</h1>
+      <h2>Моноподы для селфи</h2>
+      <ul>
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="#">Каталог товаров</a>
+        </li>
+        <li>
+          <a href="#">Перфораторы</a>
+        </li>
+      </ul>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Фильтр:</legend>
+          <fieldset>
+            <legend>Стоимость:</legend>
+                <label>
+                  <input type="number" name="min-price" value="0">
+                </label>
+                <label>
+                  <input type="number" name="max-price" value="100000">
+                </label>
+          </fieldset>
+          <fieldset>
+            <legend>Цвет:</legend>
+            <p>
+              <label>
+                <input type="checkbox" name="black" checked>
+                Чёрный
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="white">
+                Белый
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="blue" checked>
+                Синий
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="red" checked>
+                Красный
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="pink">
+                Розовый
+              </label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth:</legend>
+            <p>
+              <label>
+                <input type="radio" value="bluetooth-yes" name="filter-bluetooth" checked>
+                Есть
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" value="bluetooth-тщ" name="filter-bluetooth">
+                Нет
+              </label>
+            </p>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </fieldset>
+      </form>
+      <div>
+        <h2>Сортировка:</h2>
+        <a href="#">По цене</a>
+        <a href="#">По типу</a>
+        <a href="#">По популярности</a>
+        <a href="№" aria-label="По возрастанию">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+            <path fill="#231F20" d="M5.5 10L0 0h11"/>
+          </svg>
+        </a>
+        <a href="№" aria-label="По убыванию">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+            <path fill="#231F20" d="M5.5 10L0 0h11"/>
+          </svg>
+        </a>
+      </div>
+      <section>
+        <h2 class="visually-hidden">Список товаров моноподы для селфи</h2>
+        <ul>
+          <li>
+            <article>
+              <img src="https://via.placeholder.com/150x100" alt="Любительская селфи палка. 1100 руб.">
+              <a href="#">В корзину</a>
+              <a href="#">Добавить к сравнению</a>
+              <a href="#">
+                <h3>Любительская селфи палка</h3>
+              </a>
+              <a href="#">1100 руб.</a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="https://via.placeholder.com/150x100" alt="Профессиональная селфи-палка. 1500 руб.">
+              <a href="#">В корзину</a>
+              <a href="#">Добавить к сравнению</a>
+              <a href="#">
+                <h3>Профессиональная селфи-палка</h3>
+              </a>
+              <a href="#">1500 руб.</a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="https://via.placeholder.com/150x100" alt="Непотопляемая селфи-палка. 1500 руб.">
+              <a href="#">В корзину</a>
+              <a href="#">Добавить к сравнению</a>
+              <a href="#">
+                <h3>Непотопляемая селфи-палка</h3>
+              </a>
+              <a href="#">1500 руб.</a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <div>
+                <p>NEW</p>
+              </div>
+              <img src="https://via.placeholder.com/150x100" alt="Селфи-палка &laquo;Следуй за мной&raquo;. 1900 руб.">
+              <a href="#">В корзину</a>
+              <a href="#">Добавить к сравнению</a>
+              <a href="#">
+                <h3>Непотопляемая селфи-палка</h3>
+              </a>
+              <a href="#">1900 руб.</a>
+            </article>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">Назад</a>
+          </li>
+          <li>
+            <a>1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">Вперед</a>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="#">Войти</a>
+        </li>
+        <li>
+          <a href="#">Сравнить</a>
+        </li>
+        <li>
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
+      <a href="index.html">
+        <img src="https://via.placeholder.com/150x100" alt="Логотип интернет магазина &laquo;Девайс&raquo;">
+      </a>
+      <p>г. Москва, ул. Строителей, 15</p>
+      <ul>
+        <li>
+          <a>Доставка</a>
+        </li>
+        <li>
+          <a>Гарантия</a>
+        </li>
+        <li>
+          <a>Контакты</a>
+        </li>
+      </ul>
+      <a href="tel:+74954959595">+7 (495) 495-95-95</a>
+      <ul>
+        <li>
+          <a href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+      </ul>
+      <p class="feedback">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="https://via.placeholder.com/150x100" alt="Разработано: HTML Academy">
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
