@@ -83,59 +83,35 @@
           <legend>Фильтр:</legend>
           <fieldset>
             <legend>Стоимость:</legend>
-                <label>
-                  <input type="number" name="min-price" value="0">
-                </label>
-                <label>
-                  <input type="number" name="max-price" value="100000">
-                </label>
+            <input type="number" id="min-price" name="min-price" value="0"><label for="min-price"></label>
+            <input type="number" id="max-price" name="max-price" value="100000"><label for="max-price"></label>
           </fieldset>
           <fieldset>
             <legend>Цвет:</legend>
             <p>
-              <label>
-                <input type="checkbox" name="black" checked>
-                Чёрный
-              </label>
+              <input type="checkbox" id="color1" name="black" checked><label for="color1">Чёрный</label>
             </p>
             <p>
-              <label>
-                <input type="checkbox" name="white">
-                Белый
-              </label>
+              <input type="checkbox" id="color2" name="white"><label for="color2">Белый</label>
             </p>
             <p>
-              <label>
-                <input type="checkbox" name="blue" checked>
-                Синий
-              </label>
+              <input type="checkbox" id="color3" name="blue" checked><label for="color3">Синий</label>
             </p>
             <p>
-              <label>
-                <input type="checkbox" name="red" checked>
-                Красный
-              </label>
+              <input type="checkbox" id="color4" name="red" checked><label for="color4">Красный</label>
             </p>
             <p>
-              <label>
-                <input type="checkbox" name="pink">
-                Розовый
-              </label>
+              <input type="checkbox" id="color5" name="pink"><label for="color5">Розовый</label>
             </p>
           </fieldset>
           <fieldset>
             <legend>Bluetooth:</legend>
             <p>
-              <label>
-                <input type="radio" value="bluetooth-yes" name="filter-bluetooth" checked>
-                Есть
-              </label>
+              <input type="radio" id="b-yes" value="bluetooth-yes" name="filter-bluetooth" checked>
+              <label for="b-yes">Есть</label>
             </p>
             <p>
-              <label>
-                <input type="radio" value="bluetooth-тщ" name="filter-bluetooth">
-                Нет
-              </label>
+              <input type="radio" id="b-no" value="bluetooth-тщ" name="filter-bluetooth"><label for="b-no">Нет</label>
             </p>
           </fieldset>
           <button type="submit">Показать</button>
@@ -195,9 +171,6 @@
           </li>
           <li>
             <article>
-              <div>
-                <p>NEW</p>
-              </div>
               <img src="https://via.placeholder.com/150x100" alt="Селфи-палка &laquo;Следуй за мной&raquo;. 1900 руб.">
               <a href="#">В корзину</a>
               <a href="#">Добавить к сравнению</a>
