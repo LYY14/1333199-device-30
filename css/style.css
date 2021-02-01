@@ -11,3 +11,222 @@
   --special-green: #91C92F;
   --special-grey: #f6dada;
 }
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("../fonts/gilroyextrabold.woff2"),
+  local("../fonts/gilroyextrabold.woff2"),
+  url("/../fonts/gilroyextrabold.woff2") format("woff2"),
+  url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("../fonts/gilroyLight.woff2"),
+  local("../fonts/gilroyex.woff2"),
+  url("/../fonts/gilroyLight.woff2") format("woff2"),
+  url("../fonts/gilroyLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("../fonts/opensans.woff2"),
+  local("../fonts/opensans.woff2"),
+  url("/../fonts/opensans.woff2") format("woff2"),
+  url("../fonts/opensans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("../fonts/opensanslight.woff2"),
+  local("../fonts/opensanslight.woff2"),
+  url("/../fonts/opensanslight.woff2") format("woff2"),
+  url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.page__body {
+  min-width: 1160px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-nav__wrapper {
+  background-color: var(--special-yellow);
+}
+
+.menu {
+  list-style: none;
+}
+
+.nav-menu {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  list-style: none;
+}
+
+.catalog-menu {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: none;
+  list-style: none;
+}
+
+.slider__list {
+  list-style: none;
+}
+
+.slide__number {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 179px;
+  line-height: 219px;
+  /*color: var(--basic-white);*/
+}
+
+.slide__title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 47px;
+  line-height: 57px;
+  text-transform: none;
+}
+
+.slide__description {
+  text-transform: none;
+}
+
+.link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.link--active {
+  color: var(--special-yellow);
+}
+
+.characteristics {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: normal;
+}
+
+.characteristics__column {
+  font-size: 36px;
+  line-height: 41px;
+}
+
+.characteristics__column--description {
+  font-size: 13px;
+}
+
+.catalog__list {
+  list-style: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: none;
+}
+
+.catalog__item {
+  background-color: var(--special-yellow-light);
+}
+
+.slide-service__title {
+  text-transform: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.slide-service__description {
+  text-transform: none;
+  line-height: 30px;
+}
+
+.about-us__title,
+.contacts__title {
+  text-transform: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.about-us__description,
+.contacts__description {
+  text-transform: none;
+  line-height: 28px;
+}
+
+.delivery-company {
+  list-style: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.page__footer {
+  background-color: var(--basic-dark);
+}
+
+.menu__link--low {
+  text-transform: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-menu__link--low {
+  color: var(--basic-white);
+}
+
+.address-footer,
+.tel-number {
+  text-transform: none;
+  color: var(--basic-white);
+}
+
+.social {
+  list-style: none;
+}
+
