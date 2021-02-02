@@ -87,8 +87,34 @@ img {
   background-color: var(--special-yellow);
 }
 
-.menu {
+.menu,
+.nav-menu,
+.catalog-menu,
+.slider__list,
+.delivery-company,
+.catalog__list,
+.social {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu,
+.catalog-menu,
+.slide__title,
+.slide__description,
+.catalog__list,
+.slide-service__title,
+.slide-service__description,
+.characteristics__column--description,
+.about-us__title,
+.contacts__title,
+.about-us__description,
+.contacts__description,
+.menu__link--low,
+.address-footer,
+.tel-number {
+  text-transform: none;
 }
 
 .nav-menu {
@@ -96,7 +122,6 @@ img {
   font-weight: 900;
   font-size: 18px;
   line-height: 22px;
-  list-style: none;
 }
 
 .catalog-menu {
@@ -104,12 +129,6 @@ img {
   font-weight: 100;
   font-size: 15px;
   line-height: 20px;
-  text-transform: none;
-  list-style: none;
-}
-
-.slider__list {
-  list-style: none;
 }
 
 .slide__number {
@@ -125,11 +144,6 @@ img {
   font-weight: 900;
   font-size: 47px;
   line-height: 57px;
-  text-transform: none;
-}
-
-.slide__description {
-  text-transform: none;
 }
 
 .link {
@@ -156,15 +170,14 @@ img {
 
 .characteristics__column--description {
   font-size: 13px;
+  font-weight: 300;
 }
 
 .catalog__list {
-  list-style: none;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-  text-transform: none;
 }
 
 .catalog__item {
@@ -172,7 +185,6 @@ img {
 }
 
 .slide-service__title {
-  text-transform: none;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 47px;
@@ -180,13 +192,11 @@ img {
 }
 
 .slide-service__description {
-  text-transform: none;
   line-height: 30px;
 }
 
 .about-us__title,
 .contacts__title {
-  text-transform: none;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 47px;
@@ -195,12 +205,10 @@ img {
 
 .about-us__description,
 .contacts__description {
-  text-transform: none;
   line-height: 28px;
 }
 
 .delivery-company {
-  list-style: none;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -212,7 +220,6 @@ img {
 }
 
 .menu__link--low {
-  text-transform: none;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -222,11 +229,5 @@ img {
 
 .address-footer,
 .tel-number {
-  text-transform: none;
   color: var(--basic-white);
 }
-
-.social {
-  list-style: none;
-}
-
