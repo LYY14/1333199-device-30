@@ -3,6 +3,7 @@
   --basic-dark: #363636;
   --basic-white: #FFFFFF;
   --basic-grey: #464646;
+  --basic-grey-shadow: #DCDCDC;
   --basic-half-grey: #7E7E7E;
   --basic-grey-light: #E5E5E5;
   --special-yellow: #F7E296;
@@ -93,7 +94,10 @@ img {
 .slider__list,
 .delivery-company,
 .catalog__list,
-.social {
+.social,
+.breadcrumbs,
+.catalog-list,
+.pagination {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -113,53 +117,91 @@ img {
 .contacts__description,
 .menu__link--low,
 .address-footer,
-.tel-number {
+.tel-number,
+.product-title,
+.breadcrumbs__link,
+.filter__title-sort,
+.filter__item,
+.product-card__comparison,
+.product-card__name {
   text-transform: none;
 }
 
-.nav-menu {
+.nav-menu,
+.slide__number,
+.slide__title,
+.product-title,
+.link,
+.characteristics,
+.catalog__list,
+.slide-service__title,
+.about-us__title,
+.contacts__title,
+.delivery-company,
+.filter__title,
+.filter__title-sort,
+.pagination {
   font-family: "Gilroy", Arial, sans-serif;
+}
+.nav-menu,
+.slide__number,
+.product-card__name,
+.link,
+.pagination__link,
+.slide__title,
+.product-title,
+.filter__title-sort,
+.filter__title,
+.delivery-company,
+.about-us__title,
+.contacts__title,
+.slide-service__title,
+.catalog__list {
   font-weight: 900;
+}
+
+.nav-menu,
+.link,
+.catalog__list,
+.product-card__name {
   font-size: 18px;
-  line-height: 22px;
+}
+
+
+.product-card__price,
+.delivery-company,
+.filter__title,
+.pagination__link {
+  font-size: 16px;
+}
+
+.breadcrumbs__link,
+.filter__title-sort {
+  font-size: 14px;
 }
 
 .catalog-menu {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 100;
   font-size: 15px;
-  line-height: 20px;
 }
 
 .slide__number {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 900;
   font-size: 179px;
   line-height: 219px;
-  /*color: var(--basic-white);*/
 }
 
-.slide__title {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 900;
+.slide__title,
+.product-title {
   font-size: 47px;
   line-height: 57px;
 }
 
 .link {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 22px;
   text-transform: uppercase;
 }
 
-.link--active {
-  color: var(--special-yellow);
-}
-
 .characteristics {
-  font-family: "Gilroy", Arial, sans-serif;
   font-weight: normal;
 }
 
@@ -168,66 +210,82 @@ img {
   line-height: 41px;
 }
 
-.characteristics__column--description {
+.characteristics__column--description
+.product-card__comparison {
   font-size: 13px;
   font-weight: 300;
 }
 
-.catalog__list {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-}
-
-.catalog__item {
-  background-color: var(--special-yellow-light);
-}
-
-.slide-service__title {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 800;
-  font-size: 47px;
-  line-height: 58px;
-}
-
-.slide-service__description {
-  line-height: 30px;
-}
-
 .about-us__title,
-.contacts__title {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 800;
+.contacts__title,
+.slide-service__title {
   font-size: 47px;
   line-height: 58px;
-}
-
-.about-us__description,
-.contacts__description {
-  line-height: 28px;
-}
-
-.delivery-company {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 28px;
-}
-
-.page__footer {
-  background-color: var(--basic-dark);
 }
 
 .menu__link--low {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.breadcrumbs__link,
+.filter__item--inactive,
+.link__number {
+  opacity: 0.3;
+}
+
+.slide-service__description {
+  line-height: 30px;
+}
+
+.about-us__description,
+.contacts__description,
+.delivery-company {
+  line-height: 28px;
+}
+
+.catalog__list,
+.nav-menu,
+.product-card__name,
+.link {
+  line-height: 22px;
+}
+
+.product-card__comparison,
+.product-card__price {
+  line-height: 18px;
+}
+
+.filter__title-sort {
+  line-height: 17px;
+}
+
+.filter__cost,
+.filter__color,
+.filter__bt,
+.pagination {
+  background-color: var(--basic-grey-light);
+}
+
+/*.slide__number,*/
+.address-footer,
+.tel-number,
 .nav-menu__link--low {
   color: var(--basic-white);
 }
 
-.address-footer,
-.tel-number {
-  color: var(--basic-white);
+.link__number--active {
+  color: var(--basic-black);
+  opacity: 1;
+}
+
+.page__footer {
+  background-color: var(--basic-dark);
+}
+
+.catalog__item {
+  background-color: var(--special-yellow-light);
+}
+
+.link--active {
+  color: var(--special-yellow);
 }
