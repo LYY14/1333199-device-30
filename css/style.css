@@ -570,16 +570,13 @@ img {
 .catalog-3:active::before,
 .catalog-4:active::before,
 .catalog-5:active::before,
-.catalog-6:active::before {
+.catalog-6:active::before,
+.catalog__link:active {
   opacity: 0.3;
 }
 
 .catalog__link {
   letter-spacing: 0.05em;
-}
-
-.link--active {
-  color: var(--special-yellow);
 }
 
 .page {
@@ -611,6 +608,22 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 40px;
+}
+
+.img-1:hover {
+  background-image: url("../img/brand_dji.png");
+}
+
+.img-2:hover {
+  background-image: url("../img/brand_sp_gadgets.png");
+}
+
+.img-3:hover {
+  background-image: url("../img/brand_go_pro.png");
+}
+
+.img-4:hover {
+  background-image: url("../img/brand_vive.png");
 }
 
 .info-block {
