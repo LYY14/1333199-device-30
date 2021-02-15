@@ -104,9 +104,6 @@ img {
   align-content: start;
 }
 
-.page-header {
-}
-
 .container {
   width: 1160px;
   margin: 0 auto;
@@ -138,10 +135,6 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.catalog-menu__submenu {
-  display: flex;
 }
 
 .slide__product {
@@ -431,6 +424,7 @@ img {
 }
 
 .catalog-menu__submenu {
+  display: flex;
   margin-top: 18px;
 }
 
@@ -442,6 +436,23 @@ img {
   margin-bottom: 20px;
 }
 
+.nav-menu__item:first-child {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-menu__item:first-child:hover .catalog-menu__submenu {
+  visibility: visible;
+  position: relative;
+}
+
+.nav-menu__item:first-child:hover .slider {
+  z-index: 1;
+}
+
+.catalog-menu__submenu {
+  visibility: hidden;
+}
 
 /*Слайдер*/
 
@@ -719,6 +730,7 @@ img {
 .line {
   margin-top: 15px;
 }
+
 
 .social {
   display: flex;
