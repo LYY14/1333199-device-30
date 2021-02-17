@@ -118,6 +118,111 @@ img {
   margin-bottom: 50px;
 }
 
+/*Поисковая строка*/
+
+.search-form__input::-webkit-input-placeholder {
+
+  color: var(--basic-black-03);
+}
+
+.search-form__input::-moz-placeholder {
+  color: var(--basic-black-03);
+}
+
+.search-form__input:-moz-placeholder {
+  color: var(--basic-black-03);
+}
+
+.search-form__input:-ms-input-placeholder {
+  color: var(--basic-black-03);
+}
+
+.search-form__input:hover::-webkit-input-placeholder {
+  color: var(--basic-black-06);
+}
+
+.search-form__input:hover::-moz-placeholder {
+  color: var(--basic-black-06);
+}
+
+.search-form__input:hover:-moz-placeholder {
+  color: var(--basic-black-06);
+}
+
+.search-form__input:hover:-ms-input-placeholder {
+  color: var(--basic-black-06);
+}
+
+.search-form__input:focus::-webkit-input-placeholder {
+  color: var(--basic-black);
+}
+
+.search-form__input:focus::-moz-placeholder {
+  color: var(--basic-black);
+}
+
+.search-form__input:focus:-moz-placeholder {
+  color: var(--basic-black);
+}
+
+.search-form__input:focus:-ms-input-placeholder {
+  color: var(--basic-black);
+}
+
+.search-form__input {
+  box-sizing: border-box;
+  position: relative;
+  padding: 14px 14px 14px 40px;
+  width: 410px;
+  border: none;
+  color: var(--basic-black);
+  background-color: var(--special-yellow);
+  line-height: 20px;
+}
+
+.search-form__input:hover {
+  border-bottom: 2px solid var(--basic-black);
+  margin-bottom: -2px;
+}
+.search-form:hover .btn-search {
+  visibility: visible;
+}
+
+/*тут должна быть иконка лупы*/
+/*.::before {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  width: 16px;*/
+/*  height: 16px;*/
+/*  background-image: url("../img/icon/icon_search.svg");*/
+/*  background-repeat: no-repeat;*/
+/*}*/
+
+.btn-search {
+  visibility: hidden;
+  background-color: var(--special-yellow);
+  outline: 2px solid var(--basic-black);
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 84px;
+  height: 46px;
+  text-transform: inherit;
+}
+
+.btn-search:hover,
+.btn-search:focus {
+  background-color: var(--basic-black);
+  color: var(--basic-white);
+}
+
+.btn-search:active {
+  color: var(--basic-black-03);
+}
+
+
 .main-nav__wrapper {
   position: relative;
   background-color: var(--special-yellow);
