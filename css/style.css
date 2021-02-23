@@ -897,6 +897,7 @@ img {
 
 .popular-product {
   margin-top: 90px;
+  margin-bottom: 90px;
 }
 
 .popular-product__list {
@@ -915,17 +916,82 @@ img {
 .info-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 90px;
+}
+.about-us,
+.contacts {
+  position: relative;
+}
+
+.contacts::before,
+.about-us::before {
+  outline: 2px solid #F0C52E;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 7px;
+  background-image: url("../img/icon/icon_line.svg");
+  background-repeat: no-repeat;
+}
+
+.about-us__description,
+.contacts__description {
+  padding-top: 20px;
+}
+
+.delivery-company {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.delivery-company__item {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 34px;
+}
+
+.delivery-company__item::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -34px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid var(--basic-grey-light);
+}
+
+.link--about-us {
+  padding-left: 24px;
+  padding-right: 18px;
+}
+
+.contacts__map-img{
+  width: 560px;
+  height: 222px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  border: none;
 }
 
 .map-block {
   display: grid;
   justify-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.link--contacts {
+  justify-self: left;
 }
 
 /*Футер*/
 
 .page__footer {
   background-color: var(--basic-dark);
+  margin-top: 85px;
 }
 
 .page__footer--wrapper {
