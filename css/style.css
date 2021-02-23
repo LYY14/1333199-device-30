@@ -969,6 +969,7 @@ img {
 }
 
 .contacts__map-img{
+  position:relative;
   width: 560px;
   height: 222px;
   margin-top: 40px;
