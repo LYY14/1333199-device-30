@@ -106,8 +106,23 @@
             <legend class="filter__title">Фильтр:</legend>
             <fieldset class="filter__cost">
               <legend class="filter__title-sort">Стоимость:</legend>
-              <input type="number" id="min-price" name="min-price" value="0"><label for="min-price"></label>
-              <input type="number" id="max-price" name="max-price" value="100000"><label for="max-price"></label>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="width: 66%;margin-left: 0%"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="left: 0%"></div>
+                  <div class="toggle toggle-max" tabindex="0" style="left: 60%"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от 0
+                  </label>
+                  <label class="max-price">
+                    до 5000
+                  </label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="filter__color">
               <legend class="filter__title-sort">Цвет:</legend>
@@ -150,17 +165,17 @@
                 <label class="filter__item" for="b-no">Нет</label>
               </p>
             </fieldset>
-            <button class="link" type="submit">Показать</button>
+            <button class="link link--btn-filter" type="submit">Показать</button>
           </fieldset>
         </form>
       <section class="catalog__wrapper">
         <h2 class="visually-hidden">Список товаров моноподы для селфи</h2>
         <div class="sort-filter">
           <h2 class="filter__title">Сортировка:</h2>
-          <div>
-            <a class="filter__item" href="#">По цене</a>
-            <a class="filter__item filter__item--inactive" href="#">По типу</a>
-            <a class="filter__item filter__item--inactive" href="#">По популярности</a>
+          <div class="filter__item-sort">
+            <a class="sort__item sort__item--active">По цене</a>
+            <a class="sort__item sort__item--inactive" href="#">По типу</a>
+            <a class="sort__item sort__item--inactive" href="#">По популярности</a>
           </div>
           <div class="sort-filter__arrow-nav">
             <a href="#" aria-label="По возрастанию">
