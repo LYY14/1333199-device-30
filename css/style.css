@@ -2,6 +2,7 @@
   --basic-black: #000000;
   --basic-black-06: rgba(0, 0, 0, 0.6);
   --basic-black-03: rgba(0, 0, 0, 0.3);
+  --basic-black-01: rgba(0, 0, 0, 0.1);
   --basic-dark: #363636;
   --basic-white: #FFFFFF;
   --basic-white-07: rgba(255, 255, 255, 0.7);
@@ -229,6 +230,10 @@ img {
   margin-top: 40px;
   padding: 0 60px;
   height: 300px;
+}
+
+.main-nav__wrapper--catalog {
+  height: 210px;
 }
 
 .menu {
@@ -1112,9 +1117,40 @@ img {
   margin-left: 60px;
   margin-bottom: 50px;
 }
+.breadcrumbs__item:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs__link {
+  position: relative;
+}
 
 .breadcrumbs__item {
   margin-right: 40px;
+}
+
+.breadcrumbs__link:hover {
+  color: var(--basic-black-06);
+}
+
+.breadcrumbs__link:active {
+  color: var(--basic-black-01);
+}
+
+.breadcrumbs__link::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: -25px;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/icon/icon_arrow_nav.svg");
+  background-repeat: no-repeat;
+  color: var(--basic-black);
+}
+
+.breadcrumbs-current::before {
+  display: none;
 }
 
 .filters {
