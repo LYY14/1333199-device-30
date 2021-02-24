@@ -665,8 +665,7 @@ img {
   visibility: hidden;
 }
 
-.breadcrumbs__link,
-.filter__item--inactive {
+.breadcrumbs__link {
   opacity: 0.3;
 }
 
@@ -701,6 +700,77 @@ img {
 .filter__bt,
 .pagination {
   background-color: var(--basic-grey-light);
+}
+
+.filter__cost {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 237px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  background-color: var(--basic-grey-light);
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--basic-black-025);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 10px;
+}
+
+.range-controls .toggle-max {
+  left: 170px;
+}
+
+.price-controls {
+  position: relative;
+}
+.price-controls .min-price,
+.price-controls .max-price {
+  position: absolute;
+  top: -43px;
+  text-transform: initial;
+}
+
+.price-controls .max-price {
+  left: 120px;
+}
+
+.link--btn-filter {
+  margin-top: 20px;
+  border: none;
+  background-color: var(--special-yellow-light);
 }
 
 /*.slide__number,*/
@@ -1162,6 +1232,7 @@ img {
   margin-left: 60px;
 }
 
+
 .filter__item {
   position: relative;
   display: block;
@@ -1236,6 +1307,30 @@ img {
 
 .filter-input-radio + label:hover::after {
   background-color: var(--basic-black-06);
+}
+
+.filter__item-sort {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sort__item {
+  text-transform: initial;
+  color: var(--basic-black-03);
+}
+
+.sort__item:hover {
+  color: var(--basic-black-06);
+}
+
+.sort__item:active,
+.sort__item--active,
+.sort__item--active:hover{
+  color: var(--basic-black);
+}
+
+.sort__item--active:hover {
+  cursor: pointer;
 }
 
 .catalog__wrapper {
