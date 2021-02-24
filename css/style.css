@@ -1,9 +1,11 @@
 :root {
   --basic-black: #000000;
   --basic-black-06: rgba(0, 0, 0, 0.6);
+  --basic-black-04: rgba(0, 0, 0, 0.4);
   --basic-black-03: rgba(0, 0, 0, 0.3);
-  --basic-black-025: rgba(0, 0, 0, 0.25);
+  --basic-black-02: rgba(0, 0, 0, 0.2);
   --basic-black-01: rgba(0, 0, 0, 0.1);
+  --basic-black-025: rgba(0, 0, 0, 0.25);
   --basic-dark: #363636;
   --basic-white: #FFFFFF;
   --basic-white-07: rgba(255, 255, 255, 0.7);
@@ -126,7 +128,6 @@ img {
 /*Поисковая строка*/
 
 .search-form__input::-webkit-input-placeholder {
-
   color: var(--basic-black-03);
 }
 
@@ -186,9 +187,11 @@ img {
 }
 
 .search-form__input:hover {
-  border-bottom: 2px solid var(--basic-black);
+  border-bottom: 1px solid var(--basic-black);
   margin-bottom: -2px;
+  margin-right: -2px;
 }
+
 .search-form:hover .btn-search {
   visibility: visible;
 }
@@ -564,9 +567,20 @@ img {
   margin-right: 213px;
 }
 
+.link-user {
+  margin-right: 20px;
+}
+
+.link-out {
+  margin-right: 60px;
+  color: var(--basic-black-03);
+}
+
 .link-cart {
   margin-left: 50px;
 }
+
+.link-user::before,
 .link-enter::before,
 .link-compare::before,
 .link-cart::before,
@@ -583,7 +597,8 @@ img {
   background-position: 0 0;
 }
 
-.link-enter::before {
+.link-enter::before,
+.link-user::before {
   background-image: url("../img/icon/icon_user.svg");
 }
 
@@ -1346,6 +1361,24 @@ img {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   margin-bottom: 70px;
+  /*background-color: var(--basic-grey-light);*/
+}
+
+.arrow:hover path {
+  fill: var(--basic-black-04);
+}
+
+.arrow:active path {
+  fill: var(--basic-black);
+}
+
+.arrow-up {
+  margin-right: 16px;
+  transform: rotate(180deg);
+}
+
+.arrow-disabled path {
+  fill: var(--basic-black-02);
 }
 
 .sort-filter__arrow-nav {
