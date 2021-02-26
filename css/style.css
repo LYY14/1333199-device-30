@@ -22,6 +22,9 @@
   --special-yellow-light: #7E296;
   --special-green: #91C92F;
   --special-grey: #f6dada;
+  --bar: #00ca74;
+  --toggle-bg: #ababab;
+  --toggle-shadow: #cfcfcf;
 }
 
 /** { background-color: rgba(255,0,0,.2); }*/
@@ -187,7 +190,7 @@ img {
 }
 
 .search-form__input:hover {
-  border-bottom: 1px solid var(--basic-black);
+  border-bottom: 2px solid var(--basic-black);
   margin-bottom: -2px;
   margin-right: -2px;
 }
@@ -254,6 +257,7 @@ img {
   flex-wrap: wrap;
 }
 
+
 .menu,
 .nav-menu,
 .catalog-menu,
@@ -311,6 +315,7 @@ img {
 .pagination {
   font-family: "Gilroy", Arial, sans-serif;
 }
+
 .nav-menu,
 .slide__number,
 .product-card__name,
@@ -333,6 +338,39 @@ img {
 .catalog__list,
 .product-card__name {
   font-size: 18px;
+}
+
+.slide__title,
+.slide__description,
+.about-us__title,
+.about-us__description,
+.delivery-company,
+.contacts__title,
+.contacts__description,
+.address-footer,
+.copyright,
+.filter__item-list,
+.filter__title,
+.product-card__name {
+  margin: 0;
+}
+
+.slide__title {
+  padding-top: 47px;
+}
+
+.slide__description {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.about-us__title,
+.contacts__title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about-us__description {
+  padding-bottom: 40px;
 }
 
 
@@ -375,7 +413,6 @@ img {
   transition: 1s all ease;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 0.2em;
 }
 
 .link:active {
@@ -452,7 +489,7 @@ img {
   padding: 0;
   width: 14px;
   height: 14px;
-  border: 1px solid #000000;
+  border: 1px solid var(--basic-black);
   box-sizing: border-box;
   border-radius: 50%;
   background-color: var(--basic-white);
@@ -475,11 +512,6 @@ img {
   background-color: var(--basic-white);
   border: 1px solid var(--basic-black);
   border-radius: 50%;
-}
-
-.slide__description {
-  padding: 0;
-  margin: 0 0 60px 0;
 }
 
 .characteristics {
@@ -525,6 +557,19 @@ img {
   position: relative;
   display: block;
   color: var(--basic-black);
+}
+
+.link,
+.nav-menu__link,
+.slide-service__title,
+.about-us__title,
+.contacts__title {
+  letter-spacing: 0.2em;
+}
+
+.filter__title,
+.filter__title-sort {
+  letter-spacing: 0.1em;
 }
 
 .menu__link:hover,
@@ -626,7 +671,7 @@ img {
   content: "";
   position: absolute;
   top: 0;
-  right: 385px;
+  right: 335px;
   width: 20px;
   height: 20px;
   background-image: url("../img/icon/icon_plus.svg");
@@ -635,11 +680,15 @@ img {
 }
 
 .link-contact {
-  margin-left: 111px;
+  margin-left: 60px;
 }
 
 .link-guarantees {
-  margin-left: 38px;
+  margin-left: 25px;
+}
+
+.menu__item--low:first-child {
+  margin-right: 24px;
 }
 
 .catalog-menu__submenu {
@@ -743,7 +792,7 @@ img {
 .range-controls .bar {
   width: 70%;
   height: 2px;
-  background: #00ca74;
+  background: var(--bar);
 }
 
 .range-controls .toggle {
@@ -753,10 +802,10 @@ img {
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
+  border: 8px solid var(--basic-white);
+  background-color: var(--toggle-bg);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--toggle-shadow);
   cursor: pointer;
 }
 
@@ -775,7 +824,6 @@ img {
 .price-controls .max-price {
   position: absolute;
   top: -43px;
-  text-transform: initial;
 }
 
 .price-controls .max-price {
@@ -1020,7 +1068,6 @@ img {
 
 .contacts::before,
 .about-us::before {
-  outline: 2px solid #F0C52E;
   position: absolute;
   content: "";
   top: 0;
@@ -1031,20 +1078,15 @@ img {
   background-repeat: no-repeat;
 }
 
-.about-us__description,
-.contacts__description {
-  padding-top: 20px;
-}
-
 .delivery-company {
-  margin-top: 60px;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .delivery-company__item {
   position: relative;
   margin-top: 20px;
   margin-left: 34px;
+  font-weight: 800
 }
 
 .delivery-company__item::before {
@@ -1063,12 +1105,12 @@ img {
   padding-right: 18px;
 }
 
-.contacts__map-img{
+.contacts__map-img {
   position:relative;
   width: 560px;
   height: 222px;
   margin-top: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 97px;
   border: none;
 }
 
@@ -1092,8 +1134,9 @@ img {
 
 .page__footer--wrapper {
   margin-top: 45px;
+  margin-bottom: 65px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
 .menu--low {
@@ -1330,8 +1373,14 @@ img {
 }
 
 .sort__item {
-  text-transform: initial;
   color: var(--basic-black-03);
+}
+
+.sort__item,
+.price-controls .min-price,
+.price-controls .max-price,
+.delivery-company__item {
+  text-transform: initial;
 }
 
 .sort__item:hover {
