@@ -349,7 +349,6 @@ img {
 .contacts__description,
 .address-footer,
 .copyright,
-.filter__item-list,
 .filter__title,
 .product-card__name {
   margin: 0;
@@ -759,6 +758,12 @@ img {
   line-height: 17px;
 }
 
+.filter__item-list {
+  margin: 30px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
 .filter__cost,
 .filter__color,
 .filter__bt,
@@ -767,13 +772,13 @@ img {
 }
 
 .filter__cost {
-  margin: 0;
+  margin: 86px 0 0 0;
   padding: 0;
   border: none;
 }
 
 .range-filter {
-  width: 237px;
+  width: 200px;
 }
 
 .range-controls {
@@ -827,7 +832,7 @@ img {
 }
 
 .price-controls .max-price {
-  left: 120px;
+  left: 105px;
 }
 
 .link--btn-filter {
@@ -1286,9 +1291,74 @@ img {
 }
 
 .filters {
+  position: relative;
   margin-left: 60px;
 }
 
+.filters::before {
+  z-index: -2;
+  content: "";
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background-color: var(--basic-grey-light);
+  width: 508px;
+  height: 1315px;
+}
+.filter,
+.filter__color,
+.filter__bt {
+  position: relative;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter__color {
+  margin-top: 25px;
+}
+
+.filter__title,
+.filter__item-sort,
+.sort-filter__arrow-nav {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.filter__title-main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -2px;
+  background-color: var(--basic-grey-shadow);
+  width: 510px;
+  height: 70px;
+  z-index: -1;
+}
+
+.filter__color::before,
+.filter__cost::before,
+.filter__bt::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: var(--basic-black);
+  width: 200px;
+  height: 2px;
+}
+
+.filter__cost::before {
+  top: 71px;
+}
+
+.filter__color::before,
+.filter__bt::before {
+  top: -30px;
+}
+
+.filter__bt {
+  margin-top: 40px;
+}
 
 .filter__item {
   position: relative;
@@ -1403,13 +1473,25 @@ img {
 .catalog-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
 }
 
 .sort-filter {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   margin-bottom: 70px;
-  /*background-color: var(--basic-grey-light);*/
+}
+
+.sort-filter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -72px;
+  background-color: var(--basic-grey-light);
+  width: 1023px;
+  height: 70px;
+  z-index: -1;
 }
 
 .arrow:hover path {
