@@ -862,8 +862,6 @@ img {
 
 .catalog__item {
   position: relative;
-  display: grid;
-  grid-gap: 38px;
 }
 
 .catalog-item__img:hover {
@@ -942,6 +940,7 @@ img {
 
 .catalog__link {
   letter-spacing: 0.05em;
+  margin-top: 38px;
 }
 
 .page {
