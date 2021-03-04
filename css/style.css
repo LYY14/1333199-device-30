@@ -1658,10 +1658,11 @@ img {
   left: 0;
   margin: auto;
   z-index: 21;
-
+  visibility: hidden;
 }
 
-.modal-login {
+.modal-login,
+.modal-map {
   width: 960px;
   height: 550px;
   background-color: var(--basic-white);
@@ -1747,4 +1748,8 @@ img {
 
 .modal-close::after {
   transform: rotate(-45deg);
+}
+
+.modal-map-yandex {
+  border: none;
 }
