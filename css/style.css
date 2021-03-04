@@ -25,6 +25,8 @@
   --bar: #00ca74;
   --toggle-bg: #ababab;
   --toggle-shadow: #cfcfcf;
+  --modal-shadow: rgba(0, 0, 0, 0.15);
+  --input-bg: #F2F2F2;
 }
 
 /** { background-color: rgba(255,0,0,.2); }*/
@@ -214,18 +216,6 @@ img {
   visibility: visible;
 }
 
-/*тут должна быть иконка лупы*/
-/*.::before {*/
-/*  content: "";*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  width: 16px;*/
-/*  height: 16px;*/
-/*  background-image: url("../img/icon/icon_search.svg");*/
-/*  background-repeat: no-repeat;*/
-/*}*/
-
 .btn-search {
   visibility: hidden;
   background-color: var(--special-yellow);
@@ -289,7 +279,8 @@ img {
 .catalog-list,
 .pagination,
 .slide-service__list,
-.popular-product__list {
+.popular-product__list,
+.write-us-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -349,14 +340,16 @@ img {
 .about-us__title,
 .contacts__title,
 .slide-service__title,
-.catalog__list {
+.catalog__list,
+.write-us-list label {
   font-weight: 900;
 }
 
 .nav-menu,
 .link,
 .catalog__list,
-.product-card__name {
+.product-card__name,
+.write-us-list label{
   font-size: 18px;
 }
 
@@ -1488,7 +1481,8 @@ img {
 .sort__item,
 .price-controls .min-price,
 .price-controls .max-price,
-.delivery-company__item {
+.delivery-company__item,
+.write-us-list label {
   text-transform: initial;
 }
 
@@ -1498,7 +1492,7 @@ img {
 
 .sort__item:active,
 .sort__item--active,
-.sort__item--active:hover{
+.sort__item--active:hover {
   color: var(--basic-black);
 }
 
@@ -1652,4 +1646,105 @@ img {
 .link__back:active,
 .link__next:active {
   color: var(--basic-black-03);
+}
+
+/* Модальное окно*/
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 21;
+
+}
+
+.modal-login {
+  width: 960px;
+  height: 550px;
+  background-color: var(--basic-white);
+  box-shadow: 0 10px 16px var(--modal-shadow);
+  display: flex;
+  justify-content: center;
+}
+
+.modal-wrapper {
+  width: 760px;
+  margin-top: 90px;
+  margin-bottom: 70px;
+}
+
+.write-us {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.write-us-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 32px;
+}
+
+.test {
+  grid-column: 1 / -1;
+}
+
+.name-user,
+.email-user {
+  width: 338px;
+  padding-bottom: 15px;
+}
+
+.write-us-list input,
+.write-us-list textarea{
+  margin-top: 10px;
+  background-color: var(--input-bg);
+  border: none;
+  padding-top: 16px;
+  padding-left: 20px;
+}
+
+.write-us-list label {
+  display: block;
+}
+
+.massage-user {
+  resize: none;
+  width: 740px;
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--special-yellow);
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 16px;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-white);
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }

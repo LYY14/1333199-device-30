@@ -384,5 +384,35 @@
         </div>
       </div>
     </footer>
+
+    <section class="modal modal-login">
+      <h2 class="visually-hidden">Напишите нам если у Вас остались вопросы!</h2>
+      <div class="modal-wrapper">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="write-us">
+            <legend class="visually-hidden">Форма обратной связи</legend>
+            <ul class="write-us-list">
+              <li>
+                <label for="user-name">Ваше имя:</label>
+                <input class="name-user" type="text" id="user-name" placeholder="Имя Фамилия">
+              </li>
+              <li>
+                <label for="user-email">Ваше e-mail:</label>
+                <input class="email-user" type="email" id="user-email" placeholder="email@example.com">
+              </li>
+              <li class="test">
+                <label for="user-massage">Текст письма:</label>
+                <textarea class="massage-user" id="user-massage" placeholder="В свободной форме"></textarea>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="link link--btn-filter" type="submit">Отправить</button>
+        </form>
+      </div>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
+
   </body>
 </html>
+
+
