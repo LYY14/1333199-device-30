@@ -29,16 +29,6 @@
   --input-bg: #F2F2F2;
 }
 
-/** { background-color: rgba(255,0,0,.2); }*/
-/** * { background-color: rgba(0,255,0,.2); }*/
-/** * * { background-color: rgba(0,0,255,.2); }*/
-/** * * * { background-color: rgba(255,0,255,.2); }*/
-/** * * * * { background-color: rgba(0,255,255,.2); }*/
-/** * * * * * { background-color: rgba(255,255,0,.2); }*/
-/** * * * * * * { background-color: rgba(255,0,0,.2); }*/
-/** * * * * * * * { background-color: rgba(0,255,0,.2); }*/
-/** * * * * * * * * { background-color: rgba(0,0,255,.2); }*/
-
 @font-face {
   font-family: "Gilroy";
   src: local("../fonts/gilroyextrabold.woff2"),
@@ -91,6 +81,7 @@ a {
   text-decoration: none;
   color: var(--basic-black);
   display: inline-block;
+  vertical-align: inherit;
 }
 
 img {
@@ -109,7 +100,6 @@ img {
   text-transform: uppercase;
   color: var(--basic-black);
   background-color: var(--basic-white);
-
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -130,7 +120,6 @@ img {
   margin-bottom: 50px;
 }
 
-/*Поисковая строка*/
 .search-form {
   position: relative;
 }
@@ -238,7 +227,6 @@ img {
   color: var(--basic-white-03);
 }
 
-
 .main-nav__wrapper {
   position: relative;
   background-color: var(--special-yellow);
@@ -266,7 +254,6 @@ img {
 .nav-menu:first-child {
   justify-content: end;
 }
-
 
 .menu,
 .nav-menu,
@@ -375,6 +362,7 @@ img {
   padding-top: 30px;
   padding-bottom: 60px;
 }
+
 .about-us__title,
 .contacts__title {
   padding-top: 50px;
@@ -384,7 +372,6 @@ img {
 .about-us__description {
   padding-bottom: 40px;
 }
-
 
 .product-card__price,
 .delivery-company,
@@ -448,8 +435,6 @@ img {
   height: 100%;
 }
 
-/*Слайдер*/
-
 .slider {
   position: relative;
   margin-top: -82px;
@@ -510,7 +495,6 @@ img {
 }
 
 .slide__controls-btn:hover {
-
   transform: scale(1.1);
 }
 
@@ -565,6 +549,7 @@ img {
   position: absolute;
   top: -20px;
   display: inline-block;
+  vertical-align: inherit;
 }
 
 .menu__link,
@@ -695,20 +680,13 @@ img {
   background-position: 0 0;
 }
 
-/*.link-contact {*/
-/*  margin-left: 60px;*/
-/*}*/
-
-/*.link-guarantees {*/
-/*  margin-left: 25px;*/
-/*}*/
-
 .menu__item--low:first-child {
   margin-right: 24px;
 }
 
 .catalog-menu__submenu {
   display: inline-block;
+  vertical-align: inherit;
 }
 
 .catalog-menu__submenu:hover .nav-menu__advanced {
@@ -874,7 +852,6 @@ img {
   background-color: var(--special-yellow-light);
 }
 
-/*.slide__number,*/
 .address-footer,
 .tel-number,
 .nav-menu__link--low {
@@ -1162,8 +1139,6 @@ img {
   justify-self: left;
 }
 
-/*Футер*/
-
 .page__footer {
   background-color: var(--basic-dark);
   margin-top: 85px;
@@ -1234,7 +1209,6 @@ img {
   margin-top: 15px;
 }
 
-
 .social {
   display: flex;
   justify-self: center;
@@ -1256,7 +1230,6 @@ img {
   fill-opacity: .1;
 }
 
-
 .copyright {
   justify-self: end;
 }
@@ -1275,7 +1248,6 @@ img {
   align-content: start;
 }
 
-
 .product-title {
   grid-column: 1 / -1;
   margin-left: 60px;
@@ -1287,6 +1259,7 @@ img {
   margin-left: 60px;
   margin-bottom: 50px;
 }
+
 .breadcrumbs__item:last-child {
   margin-right: 0;
 }
@@ -1338,6 +1311,7 @@ img {
   width: 508px;
   height: 1315px;
 }
+
 .filter,
 .filter__color,
 .filter__bt {
@@ -1433,6 +1407,7 @@ img {
 .filter-input-radio:disabled +label {
   color: var(--basic-grey-disable);
 }
+
 .filter-input-checkbox:disabled + label::before,
 .filter-input-radio:disabled +label::before {
   border: 2px solid var(--basic-black-025);
@@ -1549,8 +1524,6 @@ img {
   justify-self: end;
 }
 
-/*Карточка товара*/
-
 .product-card {
   position: relative;
   width: 360px;
@@ -1598,7 +1571,6 @@ img {
   margin-top: 30px;
   align-items: baseline;
 }
-
 
 .pagination {
   display: grid;
@@ -1648,8 +1620,6 @@ img {
   color: var(--basic-black-03);
 }
 
-/* Модальное окно*/
-
 .modal {
   position: fixed;
   top: 0;
@@ -1661,7 +1631,16 @@ img {
   visibility: hidden;
 }
 
-.modal-login,
+.modal-show {
+  visibility: visible;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.modal-write-us,
 .modal-map {
   width: 960px;
   height: 550px;
@@ -1690,7 +1669,7 @@ img {
   grid-row-gap: 32px;
 }
 
-.test {
+.write-us__massage {
   grid-column: 1 / -1;
 }
 
@@ -1752,4 +1731,46 @@ img {
 
 .modal-map-yandex {
   border: none;
+}
+
+/* Анимация попапа */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
